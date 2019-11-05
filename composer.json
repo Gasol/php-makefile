@@ -1,0 +1,20 @@
+{
+    "name": "gasolwu/php-makefile",
+    "description": "Makefile recipes for PHP",
+    "homepage": "https://github.com/Gasol/php-makefile",
+    "type": "library",
+    "keywords": [
+        "build",
+        "build-tool",
+        "make",
+        "makefile",
+        "tool"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gasol Wu",
+            "email": "gasol.wu@gmail.com"
+        }
+    ]
+}
