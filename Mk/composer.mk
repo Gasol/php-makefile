@@ -13,6 +13,6 @@ composer.lock: composer.json
 	$(COMPOSER) update $(COMPOSER_UPDATE_FLAGS)
 	@test -e "$@" || cat > "$@" <<<'{}'
 
-$(VENDOR_DIR): composer.json composer.lock
+$(VENDOR_DIR): composer.json composer.lock ## Install dependencies
 	$(COMPOSER) validate --strict
 	$(COMPOSER) install $(COMPOSER_INSTALL_FLAGS)

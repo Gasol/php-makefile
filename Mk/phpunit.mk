@@ -7,7 +7,7 @@ endif
 phpunit.xml:
 	$(PHPUNIT) --generate-configuration
 
-phpunit: syntax $(VENDOR_DIR)
+phpunit: syntax $(VENDOR_DIR) ## Running a test suite by PHPUnit
 	$(PHPUNIT) $(PHPUNIT_FLAGS)
 
 .PHONY: phpunit

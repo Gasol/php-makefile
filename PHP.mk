@@ -21,10 +21,10 @@ build/syntax/%.php: %.php
 	@touch $@
 
 .PHONY: syntax
-syntax: $(PHP_FILES:%=build/syntax/%)
+syntax: $(PHP_FILES:%=build/syntax/%) ## Check syntax by PHP built-in linter
 
 .PHONY: clean
-clean:
+clean: ## Remove temporary files during development cycle
 	rm -rf build
 
 include $(foreach use, $(UNIQUE_USES), $(wildcard $(USESDIR)/$(use).mk))
