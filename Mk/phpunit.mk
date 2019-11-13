@@ -1,9 +1,13 @@
 PHPUNIT ?= vendor/bin/phpunit
 
+ifdef PHPUNIT_CONFIG_FILE
+	PHPUNIT_FLAGS += -c "$(PHPUNIT_CONFIG_FILE)"
+endif
+
 phpunit.xml:
 	$(PHPUNIT) --generate-configuration
 
-phpunit: syntax phpunit.xml $(VENDOR_DIR)
+phpunit: syntax $(VENDOR_DIR)
 	$(PHPUNIT) $(PHPUNIT_FLAGS)
 
 .PHONY: phpunit
