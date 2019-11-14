@@ -2,10 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
-The format is based on https://keepachangelog.com/en/1.0.0/[Keep a Changelog]
+The format is based on https://keepachangelog.com/en/1.0.0/[Keep a Changelog],
+but written in https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/[AsciiDoc] format.
 and this project adheres to https://semver.org/spec/v2.0.0.html[Semantic Versioning].
 
 == Unreleased
+
+== 0.1.0 - 2019-11-14
 
 === Added
 - Add the `PHP.mk` which is main makefile that should be included by client.
