@@ -1,4 +1,4 @@
-COMPOSER   ?= $(shell command -v composer)
+COMPOSER   ?= $(shell command -v composer;)
 VENDOR_DIR ?= vendor
 
 ifdef CI

@@ -1,7 +1,7 @@
 
 PHPCS ?= vendor/bin/phpcs
 
-PHP_CONFIG := $(shell command -v php-config)
+PHP_CONFIG := $(shell command -v php-config;)
 PHP_VERNUM := $(shell test -n "$(PHP_CONFIG)" && $(PHP_CONFIG) --vernum)
 PHPCS_STANDARD ?= $(shell test "$(PHP_VERNUM)" \< "70000" && echo 'PSR2' || echo 'PSR12')
 ifeq ($(findstring --standard,$(PHPCS_FLAGS)), )
