@@ -43,6 +43,10 @@ The minimum setup is to create your own Makefile and includes the PHP.mk.
 
 - `make vendor` - Install dependencies by using Composer
 
+### With `USES=phpcs`
+
+- `make style` - Check coding style by PHP_CodeSniffer
+
 ## Hints
 
 There are two approches to run test by default, So you can run test by running `make` instead of `make phpunit`
@@ -63,6 +67,7 @@ Those variables should work well for most PHP libraries by default, If it doesn'
 * `USES` - Possible values are
 	* `composer` 
 	* `phpunit`
+	* `phpcs`
 *   `BUILD_DIR` - Build directory that contains all generated files during the build phase are placed here. Should be listed in VCS  ignore file. Default to `build`.
 *   `PHP_SRCDIR` - Source directory, Default to `src`.
 *   `PHP_TESTDIR` - Tests directory, Default to `tests`.
