@@ -8,6 +8,7 @@ and this project adheres to https://semver.org/spec/v2.0.0.html[Semantic Version
 
 == Unreleased
 
+== 0.2.1 - 2019-11-15
 === Fixed
 - Fix "make: command: Command not found" on Ubuntu.
 
